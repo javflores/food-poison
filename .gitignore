@@ -3,3 +3,4 @@
 /deps
 erl_crash.dump
 *.ez
+/food_poisoning/web/elm/elm-stuff/
