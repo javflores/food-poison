@@ -2,15 +2,15 @@ module FoodPoisoning exposing (..)
 
 import Html.App as Html
 import Html exposing (..)
-import Src.Messages exposing (..)
-import Src.Models exposing (..)
-import Src.Update exposing (..)
-import Src.View exposing (..)
+import Src.Messages exposing (Message)
+import Src.Models exposing (Model, initialModel)
+import Src.Update exposing (update)
+import Src.View exposing (view)
 
 
 init : ( Model, Cmd Message )
 init =
-    ("Woo hoo, I'm in a view", Cmd.none)
+    (initialModel, Cmd.none)
 
 subscriptions : Model -> Sub Message
 subscriptions model =

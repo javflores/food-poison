@@ -1,4 +1,6 @@
 module Src.Messages exposing (..)
 
+import Food.Messages exposing (..)
+
 type Message =
-    NoOp
+    FoodMessage Food.Messages.Message 
