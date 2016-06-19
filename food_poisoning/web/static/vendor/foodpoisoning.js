@@ -6766,22 +6766,26 @@ var _elm_lang$html$Html_App$beginnerProgram = function (_p1) {
 };
 var _elm_lang$html$Html_App$map = _elm_lang$virtual_dom$VirtualDom$map;
 
-var _user$project$FoodPoisoning$view = function (model) {
-	return _elm_lang$html$Html$text(model);
-};
-var _user$project$FoodPoisoning$subscriptions = function (model) {
-	return _elm_lang$core$Platform_Sub$none;
-};
-var _user$project$FoodPoisoning$update = F2(
+var _user$project$Src_Messages$NoOp = {ctor: 'NoOp'};
+
+
+var _user$project$Src_Update$update = F2(
 	function (message, model) {
 		return {ctor: '_Tuple2', _0: model, _1: _elm_lang$core$Platform_Cmd$none};
 	});
-var _user$project$FoodPoisoning$init = {ctor: '_Tuple2', _0: 'Woo hoo hoo, I\'m in a view', _1: _elm_lang$core$Platform_Cmd$none};
+
+var _user$project$Src_View$view = function (model) {
+	return _elm_lang$html$Html$text(model);
+};
+
+var _user$project$FoodPoisoning$subscriptions = function (model) {
+	return _elm_lang$core$Platform_Sub$none;
+};
+var _user$project$FoodPoisoning$init = {ctor: '_Tuple2', _0: 'Woo hoo, I\'m in a view', _1: _elm_lang$core$Platform_Cmd$none};
 var _user$project$FoodPoisoning$main = {
 	main: _elm_lang$html$Html_App$program(
-		{init: _user$project$FoodPoisoning$init, view: _user$project$FoodPoisoning$view, update: _user$project$FoodPoisoning$update, subscriptions: _user$project$FoodPoisoning$subscriptions})
+		{init: _user$project$FoodPoisoning$init, view: _user$project$Src_View$view, update: _user$project$Src_Update$update, subscriptions: _user$project$FoodPoisoning$subscriptions})
 };
-var _user$project$FoodPoisoning$NoOp = {ctor: 'NoOp'};
 
 var Elm = {};
 Elm['FoodPoisoning'] = Elm['FoodPoisoning'] || {};
