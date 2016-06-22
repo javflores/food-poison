@@ -8,5 +8,5 @@ type alias Model =
 
 initialModel : Model
 initialModel =
-    { food = [ Food 1 "Banana" 100.0 ]
+    { food = []
     }

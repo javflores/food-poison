@@ -1,4 +1,8 @@
 module Food.Messages exposing (..)
 
+import Http
+import Food.Models exposing (FoodId, Food)
+
 type Message =
-    NoOp
+    FetchAllDone (List Food)
+    | FetchAllFail Http.Error

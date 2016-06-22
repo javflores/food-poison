@@ -20,7 +20,9 @@ defmodule FoodPoisoning.Router do
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", FoodPoisoning do
-  #   pipe_through :api
-  # end
+  scope "/api", FoodPoisoning do
+    pipe_through :api
+
+    resources "/food", FoodController, except: [:new, :edit]
+  end
 end
