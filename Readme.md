@@ -1,3 +1,4 @@
+[Build Status](https://travis-ci.org/javflores/food-poisoning.svg?branch=master)
 
 If issues with the database:
 
