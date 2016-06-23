@@ -1,4 +1,7 @@
-https://travis-ci.org/javflores/food-poisoning.svg?branch=master
+# Food Poisoning  [![Build Status](https://travis-ci.org/javflores/food-poisoning.svg?branch=master)](https://travis-ci.org/javflores/food-poisoning)
+
+
+### Troubleshooting
 
 If issues with the database:
 
