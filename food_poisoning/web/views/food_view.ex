@@ -2,7 +2,7 @@ defmodule FoodPoisoning.FoodView do
   use FoodPoisoning.Web, :view
 
   def render("index.json", %{food: food}) do
-    %{data: render_many(food, FoodPoisoning.FoodView, "food.json")}
+    render_many(food, FoodPoisoning.FoodView, "food.json")
   end
 
   def render("show.json", %{food: food}) do
