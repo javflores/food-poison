@@ -23,7 +23,7 @@ list food =
             [ thead []
                 [ tr []
                     [ th [] [ text "Name" ]
-                    , th [] [ text "Calories/100gr" ]
+                    , th [] [ text "Calories" ]
                     ]
                 ]
             , tbody [] (List.map foodRow food)
