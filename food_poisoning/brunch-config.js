@@ -1,7 +1,13 @@
 exports.config = {
   files: {
     javascripts: {
-      joinTo: "js/app.js"
+      joinTo: "js/app.js",
+      order: {
+        before: [
+          "web/static/vendor/js/jquery.js",
+          "web/static/vendor/js/bootstrap.js",
+        ]
+      }
     },
     stylesheets: {
       joinTo: "css/app.css"

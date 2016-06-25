@@ -41,5 +41,8 @@ foodRow food =
 
 buttonAddFood : Html.Html Message
 buttonAddFood =
-    a [ (class "btn ml1 h1"), style [("backgroundColor", "black")] ]
-        [ i [ class "btn-primary" ] [] ]
+    a [ (class "btn ml1 h1"), style [] ]
+        [ span [ class "glyphicon glyphicon-plus" ] [] ]
+
+
+--("backgroundColor", "black")
