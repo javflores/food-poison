@@ -1,7 +1,7 @@
 module Food.List exposing (..)
 
 import Html exposing (..)
-import Html.Attributes exposing (class)
+import Html.Attributes exposing (class, style)
 import Food.Messages exposing (..)
 import Food.Models exposing (Food)
 
@@ -24,6 +24,7 @@ list food =
                 [ tr []
                     [ th [] [ text "Name" ]
                     , th [] [ text "Calories" ]
+                    , th [] [ text "I have eaten this" ]
                     ]
                 ]
             , tbody [] (List.map foodRow food)
@@ -35,4 +36,10 @@ foodRow food =
     tr []
         [ td [] [ text food.name ]
         , td [] [ text (toString food.caloriesPerHundredGrams) ]
+        , td [] [ buttonAddFood ]
         ]
+
+buttonAddFood : Html.Html Message
+buttonAddFood =
+    a [ (class "btn ml1 h1"), style [("backgroundColor", "black")] ]
+        [ i [ class "btn-primary" ] [] ]
